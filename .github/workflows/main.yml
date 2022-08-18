@@ -22,9 +22,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ secrets.FTP_HOSTNAME }}
-          username: ${{ secrets.FTP_PASSWORD }}
-          password: ${{ secrets.FTP_USERNAME }}
+          server: ftp.williamhouses.com
+          username: u806172639.webwilliamhouses
+          password: P@ssw0rd!@#
           port: 21
           local-dir: ./dist/
           server-dir: ./public_html/nuxtjs/
