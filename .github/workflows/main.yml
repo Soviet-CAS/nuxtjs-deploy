@@ -22,9 +22,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: files.000webhost.com
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
+          server: ${{ secrets.FTP_HOSTNAME }}
+          username: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_USERNAME }}
           port: 21
           local-dir: ./dist/
-          server-dir: ./public_html/www/
+          server-dir: ./public_html/nuxtjs/
